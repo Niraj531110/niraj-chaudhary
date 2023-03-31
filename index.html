@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEJ Application Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body onload="alert('Hello TEJ!');">
+    <div>
+      <h1>Tej Application Project</h1>
+      <hr color="blackandwhite" size="1" width="50%" align="center" />
+      <form>
+        <h2>Samosa</h2>
+        <label for="price1">Price:</label>
+        <input type="number" id="price1" name="price" /><br />
+        <label for="quantity1">Quantity:</label>
+
+        <button type="button" onclick="increaseQuantity('quantity1')">+</button>
+        <input type="number" id="quantity1" name="quantity" value="0" />
+        <button type="button" onclick="decreaseQuantity('quantity1')">-</button>
+
+        <br />
+        <label for="total1">Total:</label>
+        <input type="number" id="total1" name="total" value="0" readonly />
+        <br />
+      </form>
+      <br />
+      <hr color="blackandwhite" size="1" width="50%" align="center" />
+      <form>
+        <h2>Tea</h2>
+        <label for="price2">Price:</label>
+        <input type="number" id="price2" name="price" /><br />
+
+        <label for="quantity2">Quantity:</label>
+
+        <button type="button" onclick="increaseQuantity('quantity2')">+</button>
+        <input type="number" id="quantity2" name="quantity" value="0" />
+        <button type="button" onclick="decreaseQuantity('quantity2')">-</button>
+        <br />
+        <label for="total2">Total:</label>
+        <input
+          type="number"
+          id="total2"
+          name="total"
+          value="0"
+          readonly
+        /><br />
+      </form>
+      <br />
+      <hr color="blackandwhite" size="1" width="50%" align="center" />
+      <br />
+      <label for="total3">Total:</label>
+      <input type="number" id="total3" name="total" value="0" readonly /><br />
+      <label for="vat">Vat(13%):</label>
+      <input type="number" id="vat" name="vat" value="0" />
+      <br />
+      <label for="tip">tip(10%):</label>
+      <input type="number" id="tip" name="tip" value="0" /><br />
+      <br />
+      <hr color="blackandwhite" size="1" width="50%" align="center" />
+      <label for="total4">Grand total:</label>
+      <input type="number" id="total4" name="total" value="0" readonly /><br />
+
+      <button type="button" onclick="calculateTotal()">
+        Calculate grand total
+      </button>
+      <script src="scripts.js"></script>
+    </div>
+  </body>
+</html>
